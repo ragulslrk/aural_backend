@@ -13,8 +13,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json({limit:'1mb'}))
 // mongodb+srv://ragulNolan:%23Ragul4444@cluster0.6qh9t.mongodb.net/aural?retryWrites=true&w=majority
 
-//mongodb+srv://aural123:aural123@cluster0.pzftaho.mongodb.net/aural?retryWrites=true&w=majority    
-mongoose.connect( 'mongodb+srv://ragulNolan:%23Ragul4444@cluster0.6qh9t.mongodb.net/aural?retryWrites=true&w=majority',{useNewUrlParser: true,useUnifiedTopology: true})
+//mongodb+srv://aural123:aural123@cluster0.pzftaho.mongodb.net/aural?retryWrites=true&w=majority  
+//mongodb+srv://ragulNolan:%23Ragul4444@cluster0.6qh9t.mongodb.net/aural?retryWrites=true&w=majority  
+mongoose.connect( 'mongodb+srv://aural123:aural123@cluster0.pzftaho.mongodb.net/aural?retryWrites=true&w=majority ',{useNewUrlParser: true,useUnifiedTopology: true})
 .then((res)=>{
     app.listen(process.env.PORT ||3232,()=>{
         console.log('this aural project ')
